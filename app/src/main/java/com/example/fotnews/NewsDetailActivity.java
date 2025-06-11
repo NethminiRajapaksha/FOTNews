@@ -38,9 +38,7 @@ public class NewsDetailActivity extends AppCompatActivity {
             tvAuthor.setText("Nethmini Rajapaksha");
             tvBody.setText("TechSports 2025, the annual sports event organized by the Faculty of Technology, University of Colombo, was held with great enthusiasm and team spirit. The event brought together students, staff, and faculty members for a vibrant celebration of athleticism and camaraderie.\n" +
                     "\n" +
-                    "A wide range of sports activities including track and field events, cricket, football, volleyball, and indoor games were conducted throughout the day. The event served as a platform to showcase the sporting talents of students while promoting unity, fitness, and friendly competition.\n" +
-                    "\n" +
-                    "Cheered on by an energetic crowd, participants gave their best performances, and winning teams were awarded trophies and certificates. The Dean and staff members joined in encouraging the athletes and celebrating the spirit of sportsmanship.");
+                    "A wide range of sports activities including track and field events, cricket, football, volleyball, and indoor games were conducted throughout the day.");
             tvDate.setText("May 30th • 3 days ago");
             ivImage.setImageResource(R.drawable.sample_news8);
         } else if (tabIndex == 1) {
@@ -58,7 +56,7 @@ public class NewsDetailActivity extends AppCompatActivity {
             tvAuthor.setText("Lanka Dewmini");
             tvBody.setText("The TECHNOVA-X 2025 Robotics Workshop, proudly organized by the Innovation Club of the Faculty of Technology, University of Colombo, was successfully conducted at Rajasinghe Maha Vidyalaya, Imbulgoda. This dynamic outreach event aimed to introduce school students to the fascinating world of robotics and emerging technologies.\n" +
                     "\n" +
-                    "Participants were given hands-on experience with basic robotics concepts, sensor integration, and simple coding using microcontrollers. The interactive sessions were led by university undergraduates who shared their knowledge and passion for innovation. Students were encouraged to think creatively and work collaboratively in teams, sparking their curiosity and problem-solving skills.");
+                    "Participants were given hands-on experience with basic robotics concepts, sensor integration, and simple coding using microcontrollers. The interactive sessions were led by university undergraduates who shared their knowledge and passion for innovation.");
             tvDate.setText("April 30th • 3 days ago");
             ivImage.setImageResource(R.drawable.sample_news5);
         }
