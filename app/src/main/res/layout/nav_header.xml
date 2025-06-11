@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/background"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/fot_logo1"
+        android:background="@drawable/rounded_white_bg"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOT Voice"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textPrimary"
+        android:layout_marginStart="12dp"
+        android:fontFamily="sans-serif"/>
+</LinearLayout>

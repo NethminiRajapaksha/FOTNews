@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogRootLayout"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Top Bar with Back Arrow and Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Details"
+                android:textSize="18sp"
+                android:textColor="@color/buttonOutline"
+                android:layout_marginStart="8dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/ivProfilePic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerInside"
+            android:elevation="4dp"/>
+
+        <!-- Info Card -->
+        <LinearLayout
+            android:id="@+id/layoutInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:text="Username"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Edit Info Button -->
+        <Button
+            android:id="@+id/btnEditInfo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Edit Info"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonOutline"
+            android:background="@drawable/rounded_outline_button"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"/>
+
+        <!-- Edit Card -->
+        <LinearLayout
+            android:id="@+id/layoutEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_outline_box"
+            android:padding="20dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Username"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Email Address"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:background="@drawable/rounded_edittext_bg"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:inputType="textEmailAddress"
+                android:enabled="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:background="@drawable/rounded_edittext_bg"
+                    android:inputType="textPassword"
+                    android:paddingEnd="48dp"
+                    android:padding="12dp"
+                    android:enabled="false"/>
+
+                <ImageView
+                    android:id="@+id/ivTogglePassword"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_visibility_off"
+                    android:contentDescription="Toggle Password"
+                    android:tint="@color/buttonOutline"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rounded_filled_button"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="48dp"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/buttonOutline"
+                    android:background="@drawable/rounded_outline_button"
+                    android:textStyle="bold"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sign Out Button -->
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/rounded_filled_button"
+            android:text="Sign Out"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</ScrollView>

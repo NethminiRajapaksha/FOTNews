@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Top bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/ivLike"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Like"
+            android:src="@drawable/ic_like" />
+
+        <TextView
+            android:id="@+id/tvLikeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="101"
+            android:textColor="@color/buttonOutline"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/ivLike"
+            android:layout_alignBottom="@id/ivLike"
+            android:layout_marginStart="4dp"/>
+
+        <ImageView
+            android:id="@+id/ivComment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="Comment"
+            android:layout_toEndOf="@id/tvLikeCount"
+            android:layout_alignBottom="@id/ivLike"
+            android:layout_marginStart="12dp"/>
+
+        <TextView
+            android:id="@+id/tvCommentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textColor="@color/buttonOutline"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/ivComment"
+            android:layout_alignBottom="@id/ivComment"
+            android:layout_marginStart="4dp"/>
+    </RelativeLayout>
+
+    <!-- News Info -->
+    <TextView
+        android:id="@+id/tvNewsDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="May 31, 2025 · 2 days ago"
+        android:textColor="@color/hintText"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNewsDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="University of Colombo's Faculty of Technology Signs MoU with RCS2 Technologies"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/textPrimary"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNewsDetailAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nethmini Rajapaksha"
+        android:textColor="@color/textSecondary"
+        android:textSize="15sp"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/ivNewsDetailImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_news2"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvNewsDetailBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="The Department of Instrumentation and Automation Technology, Faculty of Technology, University of Colombo, has officially signed a groundbreaking Memorandum of Understanding (MoU) with RCS2 Technologies (PVT) Limited.
+This collaboration paves the way for impactful partnerships in research, innovation, and education, contributing significantly to Sri Lanka’s digital transformation journey.
+The MoU represents a shared vision to foster technological advancement and practical exposure for students, enhancing academic excellence and industry engagement."
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvNewsDetailBody2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Held on April 30th at the Faculty of Technology, University of Colombo"
+        android:textColor="@color/textPrimary"
+        android:textStyle="italic"
+        android:textSize="15sp" />
+</LinearLayout>
