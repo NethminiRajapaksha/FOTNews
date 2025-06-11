@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Theme -->
+    <style name="Theme.FOTNews" parent="Theme.AppCompat.Light.NoActionBar">">
+        <item name="colorPrimary">@color/buttonBackground</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/buttonOutline</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+    </style>
+
+    <!-- Primary Button (Filled) -->
+    <style name="ButtonPrimary">
+        <item name="android:background">@color/buttonBackground</item>
+        <item name="android:textColor">@color/textButton</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:backgroundTint">@color/buttonBackground</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Outlined Button -->
+    <style name="ButtonOutline">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/buttonOutline</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Headline Style -->
+    <style name="TitleText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Subtitle Style -->
+    <style name="SubtitleText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="colorPrimary">#7646A6</color>          <!-- Main purple (buttons, outlines, links) -->
+    <color name="colorPrimaryDark">#6D28D9</color>      <!-- Darker purple (optional, adjust if you want a matching darker shade) -->
+    <color name="colorAccent">#7646A6</color>           <!-- Accent purple -->
+
+    <!-- Backgrounds -->
+    <color name="background">#FFFFFF</color>            <!-- White background (Welcome, Login) -->
+    <color name="backgroundDark">#000000</color>        <!-- Black background (Splash 1) -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#1A1A1A</color>           <!-- Main text (headlines, logo) -->
+    <color name="textSecondary">#7C7C7C</color>         <!-- Secondary text (welcome message, subtitle) -->
+    <color name="hintText">#9A9A9A</color>              <!-- Hint text (inputs, "Forgot Password?") -->
+    <color name="textButton">#FFFFFF</color>            <!-- Button text (white) -->
+    <color name="textButtonOutline">#7646A6</color>     <!-- Outlined button text (purple) -->
+
+    <!-- Button Colors -->
+    <color name="buttonBackground">#7646A6</color>      <!-- Filled purple button -->
+    <color name="buttonOutline">#7646A6</color>         <!-- Outline for outlined button -->
+
+    <!-- Input Field Colors -->
+    <color name="inputBackground">#FFFFFF</color>       <!-- Input field bg -->
+    <color name="inputBorder">#CCCCCC</color>           <!-- Input border (light ash) -->
+    <color name="inputFocusedBorder">#7646A6</color>    <!-- Input border (focused, purple) -->
+
+    <!-- Miscellaneous -->
+    <color name="divider">#E0E0E0</color>               <!-- Divider lines -->
+    <color name="transparent">#00000000</color>         <!-- Fully transparent -->
+
+    <!-- Status Colors -->
+    <color name="colorError">#B00020</color>            <!-- Error red -->
+    <color name="colorSuccess">#4CAF50</color>          <!-- Success green -->
+
+    <color name="tabRipple">#22000000</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="teal_700">#FF018786</color>
+</resources>
