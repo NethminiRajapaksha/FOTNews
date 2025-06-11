@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp">
+
+        <!-- Top Bar -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/back"
+                app:tint="@color/buttonOutline"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developer Details"
+                android:textColor="@color/buttonOutline"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/ivBack"
+                android:layout_marginStart="16dp"/>
+        </RelativeLayout>
+
+        <!-- Developer Image -->
+        <ImageView
+            android:id="@+id/ivDeveloper"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/developer_photo"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_circle_bg"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Details -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <!-- Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:textColor="@color/textPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" R.P.N.D.Rajapaksha"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+
+            <!-- Student No -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student No :"
+                    android:textColor="@color/textPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2020T00899"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+
+            <!-- Personal Statement -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Statement :"
+                    android:textColor="@color/textPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=" I am a self motivated and hardworking individual who enjoys learning, taking on new challenges, and working towards meaningful goals."
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+
+            <!-- Release Version -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Release Version :"
+                    android:textColor="@color/textPrimary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 1.0"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Exit Button -->
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/rounded_filled_button"
+            android:fontFamily="sans-serif"
+            android:text="Exit"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/textButton"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+</ScrollView>
